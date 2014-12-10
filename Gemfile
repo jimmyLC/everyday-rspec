@@ -31,6 +31,7 @@ group :development do
   gem 'guard-spork'
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'rb-fsevent'
+  gem 'faker'
 end
 
 group :development, :test do
