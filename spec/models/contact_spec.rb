@@ -6,6 +6,10 @@ RSpec.describe Contact, :type => :model do
     expect(build(:contact)).to be_valid
   end
 
+  it "has three phone numbers" do
+    expect(create(:contact).phones.count).to eq 3
+  end
+
   it "is vaild with a first name, lastname and email" do
     contact = build( :contact,
       firstname: "Aaron",
